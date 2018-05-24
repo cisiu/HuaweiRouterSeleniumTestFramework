@@ -19,7 +19,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-
 public class smsWorkingTC1 {
 
     static WebDriver driver;
@@ -48,12 +47,11 @@ public class smsWorkingTC1 {
         homePage.menu_sms.click();
         logWindow.LogIn_Action("admin", "admin");
         smsPage.createMessageToDraft("792308126", "to jest robocza wiad.");
+
     }
     @AfterMethod
     public void afterMethod() {
-        homePage.menu_statistic.click();
         driver.get("http://192.168.1.2");
         driver.quit();
-
     }
 }
