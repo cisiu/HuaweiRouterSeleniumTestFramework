@@ -26,6 +26,7 @@ public class SmsPage {
         drafts.click();
         System.out.println(ksd.getText());
     }
+    public void che
 
     public SmsPage(WebDriver driver) {
         this.driver = driver;
