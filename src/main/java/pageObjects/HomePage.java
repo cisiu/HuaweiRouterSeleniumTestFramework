@@ -16,6 +16,7 @@ public class HomePage {
     public WebElement menu_ussd;
     public WebElement menu_update;
     public WebElement menu_sharing;
+    public WebElement menu_settings;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

@@ -1,8 +1,8 @@
 package com.cisu.webdriver;
 
 //import com.cisu.pageObjects.HomePage;
-import pageObjects.LogWindow;
-import pageObjects.StatisticPage;
+//import com.cisu.pageObjects.LogWindow;
+//import com.cisu.pageObjects.SmsPage;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,18 +12,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
+import pageObjects.SettingsPage;
+import pageObjects.SmsPage;
+import pageObjects.LogWindow;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-
-public class PageFactoryTestCase2 {
+public class macAddressFilter {
 
     static WebDriver driver;
     HomePage homePage;
     LogWindow logWindow;
-    StatisticPage statisticPage;
+    SettingsPage settingsPage;
 
     @BeforeMethod
     public void beforeMethod() throws MalformedURLException {
@@ -38,37 +40,20 @@ public class PageFactoryTestCase2 {
 //        HomePage = PageFactory.initElements(driver, Home_PG_POF.class);
         homePage = PageFactory.initElements(driver, HomePage.class);
         logWindow = PageFactory.initElements(driver, LogWindow.class);
-        statisticPage = PageFactory.initElements(driver, StatisticPage.class);
+        settingsPage = PageFactory.initElements(driver, SettingsPage.class);
     }
 
     @Test
     public void test() {
-        homePage.menu_statistic.click();
-//        System.out.println(homePage.menu_statistic.isEnabled());
-        logWindow.LogIn_Action("admin","admin");
-        statisticPage.Edit_Action();
-        statisticPage.Select_Day(20);
-        statisticPage.setDataVolume(40);
-        statisticPage.selectDataUnit("MB");
-        statisticPage.setTresholdVolume(85);
-        statisticPage.saveButton();
-        statisticPage.getTaaa();
-//        statisticPage.popConfirm();
-    }
+        homePage.menu_settings.click();
+        logWindow.LogIn_Action("admin", "admin");
+        settingsPage.
 
+
+    }
     @AfterMethod
     public void afterMethod() {
-        homePage.menu_statistic.click();
-//        System.out.println(homePage.menu_statistic.isEnabled());
-        statisticPage.Edit_Action();
-//        statisticPage.popConfirm();
-        statisticPage.Select_Day(1);
-        statisticPage.setDataVolume(100);
-        statisticPage.selectDataUnit("GB");
-        statisticPage.setTresholdVolume(85);
-        statisticPage.saveButton();
         driver.get("http://192.168.1.2");
         driver.quit();
-
     }
 }

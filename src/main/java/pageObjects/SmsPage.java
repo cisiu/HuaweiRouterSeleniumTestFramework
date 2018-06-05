@@ -14,7 +14,6 @@ public class SmsPage {
     WebElement message_content;
     WebElement pop_save_to_drafts;
     WebElement drafts;
-
     @FindBy(how= How.XPATH,using="//*[@id=\"sms_table\"]/tbody/tr[2]/td[3]/pre")
     WebElement ksd;
 
@@ -26,7 +25,6 @@ public class SmsPage {
         drafts.click();
         System.out.println(ksd.getText());
     }
-    public void che
 
     public SmsPage(WebDriver driver) {
         this.driver = driver;
