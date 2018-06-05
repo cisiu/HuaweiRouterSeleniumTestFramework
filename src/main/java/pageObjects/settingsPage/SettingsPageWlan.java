@@ -3,11 +3,13 @@ package pageObjects.settingsPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class SettingsPageWlan extends SettingsPage{
 
     WebElement wlanmacfilter;
     SettingsPage wlanPage;
+    WebElement ssid1_select_service;
 
     public SettingsPageWlan(WebDriver driver) {
         super(driver);
@@ -16,6 +18,10 @@ public class SettingsPageWlan extends SettingsPage{
         wlanPage.wlan.click();
     }
 
+    public void MacFilterFlag(int flag){
+        Select select_Mac_politic = new Select(ssid1_select_service);
+        select_Mac_politic.selectByIndex(flag);
+    }
     public void clickWlanMacFilter(){
         wlanmacfilter.click();
     }

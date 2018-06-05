@@ -50,6 +50,7 @@ public class macAddressFilter {
         SettingsPageWlan settingsPageWlan;
         settingsPageWlan = PageFactory.initElements(driver, SettingsPageWlan.class);
         settingsPageWlan.clickWlanMacFilter();
+        settingsPageWlan.MacFilterFlag(2);
 
     }
     @AfterMethod
