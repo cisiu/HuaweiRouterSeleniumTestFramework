@@ -12,9 +12,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
-import pageObjects.SettingsPage;
-import pageObjects.SmsPage;
+import pageObjects.settingsPage.SettingsPage;
 import pageObjects.LogWindow;
+import pageObjects.settingsPage.SettingsPageWlan;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,7 +25,7 @@ public class macAddressFilter {
     static WebDriver driver;
     HomePage homePage;
     LogWindow logWindow;
-    SettingsPage settingsPage;
+    SettingsPageWlan settingsPage;
 
     @BeforeMethod
     public void beforeMethod() throws MalformedURLException {
@@ -38,17 +38,18 @@ public class macAddressFilter {
 //        driver.get("http://www.samsung.com");
         driver.get("http://192.168.1.1");
 //        HomePage = PageFactory.initElements(driver, Home_PG_POF.class);
-        homePage = PageFactory.initElements(driver, HomePage.class);
-        logWindow = PageFactory.initElements(driver, LogWindow.class);
-        settingsPage = PageFactory.initElements(driver, SettingsPage.class);
+//        homePage = PageFactory.initElements(driver, HomePage.class);
+//        logWindow = PageFactory.initElements(driver, LogWindow.class);
+//        settingsPage = PageFactory.initElements(driver, SettingsPageWlan.class);
+
+
     }
 
     @Test
     public void test() {
-        homePage.menu_settings.click();
-        logWindow.LogIn_Action("admin", "admin");
-        settingsPage.
-
+        SettingsPageWlan settingsPageWlan;
+        settingsPageWlan = PageFactory.initElements(driver, SettingsPageWlan.class);
+        settingsPageWlan.clickWlanMacFilter();
 
     }
     @AfterMethod
