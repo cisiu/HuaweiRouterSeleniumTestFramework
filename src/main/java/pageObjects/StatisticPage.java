@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class StatisticPage {
-    final WebDriver driver;
-
     WebElement agile_edit_volume;
     WebElement mobile_start_date_select;
     WebElement mobile_data_volume;
@@ -16,9 +14,6 @@ public class StatisticPage {
     WebElement month_used_value;
     WebElement pop_confirm;
 
-    public StatisticPage(WebDriver driver) {
-        this.driver = driver;
-    }
     public void Select_Day(int day_nr){
 //        return new Select(mobile_start_date_select);
         Select select_date = new Select(mobile_start_date_select);

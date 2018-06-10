@@ -8,7 +8,6 @@ import org.openqa.selenium.support.How;
 
 
 public class SmsPage {
-    final WebDriver driver;
     WebElement message;
     WebElement recipients_number;
     WebElement message_content;
@@ -24,10 +23,6 @@ public class SmsPage {
         pop_save_to_drafts.click();
         drafts.click();
         System.out.println(ksd.getText());
-    }
-
-    public SmsPage(WebDriver driver) {
-        this.driver = driver;
     }
 
 }
