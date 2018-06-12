@@ -15,4 +15,11 @@ public class HomePage {
     public WebElement menu_update;
     public WebElement menu_sharing;
     public WebElement menu_settings;
+    int instanceCountOfHomePage;
+
+//    public HomePage(WebElement menu_statistic) {
+//        instanceCountOfHomePage=+1;
+//        System.out.println("instanceCountOfHomePage");
+//        System.out.println(instanceCountOfHomePage);
+//    }
 }

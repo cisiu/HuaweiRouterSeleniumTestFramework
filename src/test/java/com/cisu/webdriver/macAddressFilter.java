@@ -23,10 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 public class macAddressFilter {
 
-//    static WebDriver driver;
-    HomePage homePage;
-    LogWindow logWindow;
-    SettingsPageWlan settingsPage;
+
     DriverForHuaweii driverForHuaweii;
 
     @BeforeMethod
@@ -43,6 +40,7 @@ public class macAddressFilter {
         settingsPageWlan.clickWlanMacFilter();
         settingsPageWlan.MacFilterFlag(2);
         settingsPageWlan.insertMacadress("24:18:1D:37:A9:A3");
+
     }
     @AfterMethod
     public void afterMethod() {
