@@ -44,7 +44,7 @@ public class macAddressFilter {
     }
     @AfterMethod
     public void afterMethod() {
-        driverForHuaweii.driver.get("http://192.168.1.2");
+        driverForHuaweii.driver.get("http://192.168.1.4");
         driverForHuaweii.driver.quit();
     }
 }
