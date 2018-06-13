@@ -15,16 +15,8 @@ public class SettingsPageWlan {
     WebElement pop_confirm;
 
     public SettingsPageWlan(WebDriver driver) {
-//        super(driver);
-        instanceCountOfSettingsPageWLan=+1;
-        System.out.println("SettingsPageWLan");
-        System.out.println(instanceCountOfSettingsPageWLan);
-
         settingsPage = PageFactory.initElements(driver, SettingsPage.class);
         settingsPage.clickWLan();
-//        super.clickWLan();
-//        wlanPage.wlan.click();
-//        super.wlan.click();
     }
 
     public void MacFilterFlag(int flag){
@@ -37,9 +29,10 @@ public class SettingsPageWlan {
 
     public void insertMacadress(String macAdress){
         ssid1_input_WifiMacFilterMac0.sendKeys(macAdress);
+    }
+
+    public void applyChanges(){
         apply.click();
         pop_confirm.click();
     }
-
-
 }

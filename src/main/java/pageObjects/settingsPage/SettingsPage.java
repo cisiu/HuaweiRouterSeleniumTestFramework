@@ -9,6 +9,7 @@ import pageObjects.LogWindow;
 public class SettingsPage {
     final WebDriver driver;
     WebElement wlan;
+    WebElement dialup;
     WebElement quick_setup;
     WebElement sntp;
     HomePage homePage;
@@ -23,7 +24,7 @@ public class SettingsPage {
         homePage = PageFactory.initElements(driver, HomePage.class);
         logWindow = PageFactory.initElements(driver, LogWindow.class);
         homePage.menu_settings.click();
-//        logWindow.LogIn_Action("admin", "admin");
+        logWindow.LogIn_Action("admin", "admin");
     }
 
     public void clickWLan(){
@@ -37,7 +38,7 @@ public class SettingsPage {
         sntp.click();
     }
     public void clickDialup(){
-        wlan.click();
+        dialup.click();
     }
     public void internet(){
         wlan.click();

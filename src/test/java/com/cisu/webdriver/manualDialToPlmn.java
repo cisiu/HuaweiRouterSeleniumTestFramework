@@ -15,21 +15,21 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.settingsPage.SettingsPage;
 import pageObjects.LogWindow;
+import pageObjects.settingsPage.SettingsPageDialUp;
 import pageObjects.settingsPage.SettingsPageWlan;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class macAddressFilter {
+public class manualDialToPlmn {
 
 
     DriverForHuaweii driverForHuaweii;
-    SettingsPageWlan settingsPageWlan;
+    SettingsPageDialUp settingsPageDialUp;
 
     @BeforeMethod
     public void beforeMethod() throws MalformedURLException {
-
         driverForHuaweii = new DriverForHuaweii();
         driverForHuaweii.driver.get("http://192.168.1.1");
     }
@@ -37,17 +37,17 @@ public class macAddressFilter {
     @Test
     public void test() {
 
-        settingsPageWlan = PageFactory.initElements(driverForHuaweii.driver, SettingsPageWlan.class);
-        settingsPageWlan.clickWlanMacFilter();
-        settingsPageWlan.MacFilterFlag(2);
-        settingsPageWlan.insertMacadress("24:18:1D:37:A9:A3");
-        settingsPageWlan.applyChanges();
+        settingsPageDialUp = PageFactory.initElements(driverForHuaweii.driver, SettingsPageDialUp.class);
+        settingsPageDialUp.ClickUstawieniaSieci();
+        settingsPageDialUp.NetworkSelectMode(1);
+        settingsPageDialUp.applyChanges();
+        settingsPageDialUp.selectPlayPlmn();
     }
     @AfterMethod
     public void afterMethod() {
-        settingsPageWlan.clickWlanMacFilter();
-        settingsPageWlan.MacFilterFlag(0);
-        settingsPageWlan.applyChanges();
+//        settingsPageWlan.clickWlanMacFilter();
+//        settingsPageWlan.MacFilterFlag(0);
+//        settingsPageWlan.applyChanges();
 //        settingsPageWlan.insertMacadress("24:18:1D:37:A9:A3");
         driverForHuaweii.driver.get("http://192.168.1.4");
         driverForHuaweii.driver.quit();
