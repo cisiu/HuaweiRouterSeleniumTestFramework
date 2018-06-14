@@ -16,7 +16,7 @@ public class DriverForHuaweii {
         DesiredCapabilities capability = DesiredCapabilities.chrome();
         capability.setPlatform(Platform.WIN10);
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("http://192.168.1.1");
     }

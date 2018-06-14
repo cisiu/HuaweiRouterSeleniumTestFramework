@@ -14,7 +14,6 @@ public class SettingsPageDialUp {
     WebElement label_mobile_network_settings;
     SettingsPage settingsPage;
     WebElement dialup;
-    WebElement apply;
     WebElement pop_confirm;
     WebElement network_select;
     WebElement mobilensetting_apply;
@@ -47,5 +46,3 @@ public class SettingsPageDialUp {
         pop_confirm.click();
     }
 }
-
-//*[@id="plmn_list"]/tbody/tr[1]/td[2]/label

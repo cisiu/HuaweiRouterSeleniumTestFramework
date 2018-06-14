@@ -45,10 +45,8 @@ public class manualDialToPlmn {
     }
     @AfterMethod
     public void afterMethod() {
-//        settingsPageWlan.clickWlanMacFilter();
-//        settingsPageWlan.MacFilterFlag(0);
-//        settingsPageWlan.applyChanges();
-//        settingsPageWlan.insertMacadress("24:18:1D:37:A9:A3");
+        settingsPageDialUp.NetworkSelectMode(0);
+        settingsPageDialUp.applyChanges();
         driverForHuaweii.driver.get("http://192.168.1.4");
         driverForHuaweii.driver.quit();
     }
