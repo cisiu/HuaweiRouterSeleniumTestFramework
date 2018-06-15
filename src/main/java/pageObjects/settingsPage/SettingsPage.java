@@ -2,17 +2,24 @@ package pageObjects.settingsPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.HomePage;
 import pageObjects.LogWindow;
 
 public class SettingsPage {
     final WebDriver driver;
+    @CacheLookup
     WebElement wlan;
+    @CacheLookup
     WebElement dialup;
+    @CacheLookup
     WebElement quick_setup;
+    @CacheLookup
     WebElement sntp;
+    @CacheLookup
     HomePage homePage;
+    @CacheLookup
     LogWindow logWindow;
     int instanceCountOfSettingsPage;
 
