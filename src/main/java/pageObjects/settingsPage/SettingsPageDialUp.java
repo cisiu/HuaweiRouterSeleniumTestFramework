@@ -22,7 +22,7 @@ public class SettingsPageDialUp {
     SettingsPage settingsPage;
     @CacheLookup
     WebElement dialup;
-    @CacheLookup
+//    @CacheLookup
     WebElement pop_confirm;
     @CacheLookup
     WebElement network_select;
@@ -62,7 +62,7 @@ public class SettingsPageDialUp {
         LOGGER.setLevel(Level.INFO);
         LOGGER.info("hello1");
 //        WebElement element = waitForMobilenSettingAplly.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mobilensetting_apply\"]/span/span/span")));
-        LOGGER.info("hello2");
+//        LOGGER.info("hello2");
 //        System.out.println(element.isEnabled());
 
 //        if (element.isDisplayed()) ;
