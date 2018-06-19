@@ -2,7 +2,11 @@ D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\HomePage.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\SmsPage.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\UssdPage.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\UpdatePage.java
-D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\SettingsPage.java
+D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\settingsPage\SettingsPageWlan.java
+D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\settingsPage\SettingsPage.java
+D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\settingsPage\SettingsPageDialUp.java
+D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\dzienniki.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\LogWindow.java
+D:\Informatyka\HuaweiSeleniumFramework\src\main\java\DriverInstantiation\DriverForHuaweii.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\StatisticPage.java
 D:\Informatyka\HuaweiSeleniumFramework\src\main\java\pageObjects\SharingPage.java

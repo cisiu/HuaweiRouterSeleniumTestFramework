@@ -8,12 +8,15 @@ import org.openqa.selenium.WebElement;
 
 
 public class LogWindow {
-
+    /***
+     * we need to shorten wait impicit wait to few sec
+     */
     public WebElement username;
     @CacheLookup
     public WebElement password;
     @CacheLookup
     public WebElement pop_login;
+
 
 //
 //    public LogWindow(WebDriver driver)

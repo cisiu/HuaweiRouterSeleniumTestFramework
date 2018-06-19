@@ -23,7 +23,6 @@ public class HomePage {
     public WebElement menu_sharing;
     @CacheLookup
     public WebElement menu_settings;
-    int instanceCountOfHomePage;
 
 //    public HomePage(WebElement menu_statistic) {
 //        instanceCountOfHomePage=+1;
