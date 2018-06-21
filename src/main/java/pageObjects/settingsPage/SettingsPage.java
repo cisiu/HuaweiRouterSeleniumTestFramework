@@ -6,13 +6,13 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.HomePage;
 import pageObjects.LogWindow;
-import pageObjects.dzienniki;
+import pageObjects.Logs;
 
 import java.util.logging.Logger;
 
 public class SettingsPage {
     final WebDriver driver;
-    private final static Logger LOGGER = Logger.getLogger(dzienniki.class .getName());
+    private final static Logger LOGGER = Logger.getLogger(Logs.class .getName());
     @CacheLookup
     WebElement wlan;
     @CacheLookup

@@ -1,14 +1,10 @@
 package pageObjects.settingsPage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.internal.WebElementToJsonConverter;
 import org.openqa.selenium.support.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pageObjects.dzienniki;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -58,7 +54,7 @@ public class SettingsPageDialUp {
         pop_OK.click();
     }
 
-    public void applyChanges() throws InterruptedException {
+    public void applyChanges() {
         LOGGER.setLevel(Level.INFO);
         LOGGER.info("hello1");
 //        WebElement element = waitForMobilenSettingAplly.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mobilensetting_apply\"]/span/span/span")));
@@ -68,16 +64,15 @@ public class SettingsPageDialUp {
 //        if (element.isDisplayed()) ;
         for (int a = 0; a < 10; a++) {
             try {
+                TimeUnit.SECONDS.sleep(1);
                 mobilensetting_apply.click();
                 break;
             } catch (Exception e) {
-                LOGGER.info("exception trying mobilensetting");
+//                LOGGER.info("exception trying mobilensetting");
+                LOGGER.log(Level.SEVERE,"exception trying mobilensetting", e.getStackTrace());
             }
 
-            TimeUnit.SECONDS.sleep(1);
         }
-        LOGGER.info("hello2");
-//        mobilensetting_apply.click();
         pop_confirm.click();
         LOGGER.info("hello3");
     }

@@ -51,7 +51,6 @@ public class PageFactoryTestCase2 {
         statisticPage.selectDataUnit("MB");
         statisticPage.setTresholdVolume(85);
         statisticPage.saveButton();
-        statisticPage.getTaaa();
 //        statisticPage.popConfirm();
     }
 

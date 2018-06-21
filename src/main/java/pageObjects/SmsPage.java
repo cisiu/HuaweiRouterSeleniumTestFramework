@@ -13,8 +13,8 @@ public class SmsPage {
     WebElement message_content;
     WebElement pop_save_to_drafts;
     WebElement drafts;
-    @FindBy(how= How.XPATH,using="//*[@id=\"sms_table\"]/tbody/tr[2]/td[3]/pre")
-    WebElement ksd;
+//    @FindBy(how= How.XPATH,using="//*[@id=\"sms_table\"]/tbody/tr[2]/td[3]/pre")
+//    WebElement ksd;
 
     public void createMessageToDraft(String phoneNr,String messageContent ){
         message.click();
@@ -22,7 +22,6 @@ public class SmsPage {
         message_content.sendKeys(messageContent);
         pop_save_to_drafts.click();
         drafts.click();
-        System.out.println(ksd.getText());
     }
 
 }

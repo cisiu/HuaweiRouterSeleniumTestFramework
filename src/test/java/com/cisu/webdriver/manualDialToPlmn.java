@@ -35,7 +35,7 @@ public class manualDialToPlmn {
     }
 
     @Test
-    public void test() throws InterruptedException {
+    public void test() {
 
         settingsPageDialUp = PageFactory.initElements(driverForHuaweii.driver, SettingsPageDialUp.class);
         settingsPageDialUp.ClickUstawieniaSieci();
@@ -44,7 +44,7 @@ public class manualDialToPlmn {
         settingsPageDialUp.selectPlayPlmn();
     }
     @AfterMethod
-    public void afterMethod() throws InterruptedException {
+    public void afterMethod() {
         settingsPageDialUp.NetworkSelectMode(0);
         settingsPageDialUp.applyChanges();
         driverForHuaweii.driver.get("http://192.168.1.4");

@@ -39,11 +39,6 @@ public class StatisticPage {
         selDataUnit.selectByVisibleText(unit);
     }
 
-    public void getTaaa(){
-//        month_used_value.getText();
-        System.out.println(month_used_value.getText());
-    }
-
     public void Edit_Action(){
         agile_edit_volume.click();
     }

@@ -5,6 +5,10 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.WebElement;
+import pageObjects.settingsPage.SettingsPageDialUp;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class LogWindow {
@@ -17,6 +21,7 @@ public class LogWindow {
     @CacheLookup
     public WebElement pop_login;
 
+    private final static Logger LOGGER = Logger.getLogger(SettingsPageDialUp.class .getName());
 
 //
 //    public LogWindow(WebDriver driver)
@@ -33,7 +38,10 @@ public class LogWindow {
         }
         catch (Exception e){
             System.out.println("login window did not appear");
-            }
+//            LOGGER.log(Level.SEVERE,"exception trying logging", e.getStackTrace());
+            LOGGER.log(Level.SEVERE, e.getMessage(), e);
+
+        }
     }
 
 }
