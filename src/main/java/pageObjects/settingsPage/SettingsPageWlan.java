@@ -67,6 +67,7 @@ public class SettingsPageWlan {
         LOGGER.info("mac address provided");
     }
 
+    
     public void applyChanges(){
         apply.click();
         pop_confirm.click();
