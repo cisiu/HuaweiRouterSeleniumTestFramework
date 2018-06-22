@@ -22,7 +22,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class macAddressFilter {
-    
+    //comment for git testing
     DriverForHuaweii driverForHuaweii;
     SettingsPageWlan settingsPageWlan;
 

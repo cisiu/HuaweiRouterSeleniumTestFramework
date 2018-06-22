@@ -14,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SettingsPageWlan {
+    //comment for testing
     private final static Logger LOGGER = Logger.getLogger(SettingsPageWlan.class .getName());
 //    @CacheLookup
     WebElement wlanmacfilter;
@@ -67,7 +68,6 @@ public class SettingsPageWlan {
         LOGGER.info("mac address provided");
     }
 
-    
     public void applyChanges(){
         apply.click();
         pop_confirm.click();
