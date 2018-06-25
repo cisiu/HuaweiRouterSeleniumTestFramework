@@ -11,8 +11,5 @@ public class Logs {
 //        fh = new FileHandler("C:\\Users\\Cisu\\Documents\\dziennik.txt");
 //        LOGGER.addHandler(fh);
         LOGGER.setLevel(Level.INFO);
-
-        LOGGER.info("hello");
-        LOGGER.severe("severe");
     }
 }

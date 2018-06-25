@@ -23,13 +23,6 @@ public class LogWindow {
 
     private final static Logger LOGGER = Logger.getLogger(SettingsPageDialUp.class .getName());
 
-//
-//    public LogWindow(WebDriver driver)
-//
-//    {
-////
-//    }
-
     public void LogIn_Action(String sUserName, String sPassword){
         try {
             username.sendKeys(sUserName);

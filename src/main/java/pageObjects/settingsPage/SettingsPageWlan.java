@@ -46,18 +46,14 @@ public class SettingsPageWlan {
     public void clickWlanMacFilter(){
         LOGGER.info("wlanmacfilter.click()");
         WebElement element = clickWlanMacFilterWait.until(ExpectedConditions.elementToBeClickable(By.id("wlanmacfilter")));
-//        element.click();
-//        wlanmacfilter.click();
         for (int a = 0; a < 10; a++) {
             try {
                 TimeUnit.SECONDS.sleep(1);
                 wlanmacfilter.click();
                 break;
             } catch (Exception e) {
-//                LOGGER.info("exception trying mobilensetting");
                 LOGGER.log(Level.SEVERE, e.getMessage(), e);
             }
-
         }
     }
 

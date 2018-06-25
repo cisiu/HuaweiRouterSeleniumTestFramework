@@ -32,9 +32,7 @@ public class PageFactoryTestCase2 {
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-//        driver.get("http://www.samsung.com");
         driver.get("http://192.168.1.1");
-//        HomePage = PageFactory.initElements(driver, Home_PG_POF.class);
         homePage = PageFactory.initElements(driver, HomePage.class);
         logWindow = PageFactory.initElements(driver, LogWindow.class);
         statisticPage = PageFactory.initElements(driver, StatisticPage.class);

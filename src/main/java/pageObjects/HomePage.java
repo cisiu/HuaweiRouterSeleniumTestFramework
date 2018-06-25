@@ -27,5 +27,4 @@ public class HomePage {
 //    public HomePage(WebElement menu_statistic) {
 //        instanceCountOfHomePage=+1;
 
-//    }
 }
