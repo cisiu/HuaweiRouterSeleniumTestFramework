@@ -37,7 +37,6 @@ public class LogWindow {
             pop_login.click();
         }
         catch (Exception e){
-            System.out.println("login window did not appear");
 //            LOGGER.log(Level.SEVERE,"exception trying logging", e.getStackTrace());
             LOGGER.log(Level.SEVERE, e.getMessage(), e);
 

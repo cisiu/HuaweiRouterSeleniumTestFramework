@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class SettingsPageWlan {
-    //comment for testing
+
     private final static Logger LOGGER = Logger.getLogger(SettingsPageWlan.class .getName());
 //    @CacheLookup
     WebElement wlanmacfilter;
@@ -45,8 +45,7 @@ public class SettingsPageWlan {
     }
     public void clickWlanMacFilter(){
         LOGGER.info("wlanmacfilter.click()");
-//        WebElement element = clickWlanMacFilterWait.until(ExpectedConditions.elementToBeClickable(By.id("wlanmacfilter")));
-        System.out.println(wlanmacfilter.isEnabled());
+        WebElement element = clickWlanMacFilterWait.until(ExpectedConditions.elementToBeClickable(By.id("wlanmacfilter")));
 //        element.click();
 //        wlanmacfilter.click();
         for (int a = 0; a < 10; a++) {

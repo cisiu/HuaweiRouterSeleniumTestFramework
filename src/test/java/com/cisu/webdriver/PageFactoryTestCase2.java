@@ -43,7 +43,6 @@ public class PageFactoryTestCase2 {
     @Test
     public void test() {
         homePage.menu_statistic.click();
-//        System.out.println(homePage.menu_statistic.isEnabled());
         logWindow.LogIn_Action("admin","admin");
         statisticPage.Edit_Action();
         statisticPage.Select_Day(20);
@@ -57,7 +56,6 @@ public class PageFactoryTestCase2 {
     @AfterMethod
     public void afterMethod() {
         homePage.menu_statistic.click();
-//        System.out.println(homePage.menu_statistic.isEnabled());
         statisticPage.Edit_Action();
 //        statisticPage.popConfirm();
         statisticPage.Select_Day(1);

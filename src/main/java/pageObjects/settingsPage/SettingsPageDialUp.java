@@ -59,8 +59,6 @@ public class SettingsPageDialUp {
         LOGGER.info("hello1");
 //        WebElement element = waitForMobilenSettingAplly.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mobilensetting_apply\"]/span/span/span")));
 //        LOGGER.info("hello2");
-//        System.out.println(element.isEnabled());
-
 //        if (element.isDisplayed()) ;
         for (int a = 0; a < 10; a++) {
             try {
